@@ -9,7 +9,7 @@ const trelloLogInPage = new TrelloLogInPage();
 const trelloMainBoard = new TrelloMainBoard();
 
 const userName = 'marika595';
-const email = 'netguru.zadanie+11@gmail.com';
+const email = 'trello.zadanie+11@gmail.com';
 const password = 'Marika1!';
 
 fixture('log in')

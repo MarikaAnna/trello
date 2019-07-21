@@ -17,7 +17,7 @@ const trelloMainBoard = new TrelloMainBoard();
 
 const faker = require('faker');
 const name = 'Marika';
-const randomEmail = `${'netguru.zadanie+'}${faker.random.number()}${'@gmail.com'}`;
+const randomEmail = `${'trello.zadanie+'}${faker.random.number()}${'@gmail.com'}`;
 const password = 'Marika1!';
 const boardName = 'My board';
 const listName = 'My list';
