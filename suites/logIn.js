@@ -1,24 +1,48 @@
+import { Selector, t } from 'testcafe';
+
 import TrelloHomePage from "../pageObjects/TrelloHomePage";
 import TrelloLogInPage from "../pageObjects/TrelloLogInPage"
-import TrelloSignUpPage from "../pageObjects/TrelloSignUpPage"
+import TrelloMainBoard from "../pageObjects/TrelloMainBoard";
 
 const trelloHomePage = new TrelloHomePage();
 const trelloLogInPage = new TrelloLogInPage();
-const trelloSignUpPage = new TrelloSignUpPage();
+const trelloMainBoard = new TrelloMainBoard();
 
-fixture('LogIn')
+const userName = 'marika595';
+const email = 'netguru.zadanie+11@gmail.com';
+const password = 'Marika1!';
+
+fixture('log in')
     .page('https://trello.com/');
 
-test(``, async(t) => {
-    await t
-        .click(devHomePage.aboutLink)
-        .expect(devAboutPage.firstFounder.exists).ok()
-        .expect(devAboutPage.secondFounder.exists).ok()
-        .expect(devAboutPage.thirdFounder.exists).ok();
+test(`logs in with given mail`, async() => {
+    await trelloHomePage.goToLogInPage();
+
+    await trelloLogInPage.isPage();
+
+    await trelloLogInPage.fillInTheUserNameInput(email);
+
+    await trelloLogInPage.fillInThePasswordInput(password);
+
+    await trelloLogInPage.summitByLoggingIn();
+
+    await trelloMainBoard.isAllBoardsVisible();
+
+    await trelloMainBoard.logOut();
 });
 
-test("Filter articles by discuss tag", async (t) => {
-    await t
-        .click(devHomePage.discussTag)
-        .expect(devDiscussTagPage.discussTitle.exists).ok();
+test(`logs in with given username`, async() => {
+    await trelloHomePage.goToLogInPage();
+
+    await trelloLogInPage.isPage();
+
+    await trelloLogInPage.fillInTheUserNameInput(userName);
+
+    await trelloLogInPage.fillInThePasswordInput(password);
+
+    await trelloLogInPage.summitByLoggingIn();
+
+    await trelloMainBoard.isAllBoardsVisible();
+
+    await trelloMainBoard.logOut();
 });

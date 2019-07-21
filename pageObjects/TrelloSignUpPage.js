@@ -9,7 +9,6 @@ export default class TrelloSignUpPage {
         this.passwordInput = Selector('#signup-form #password');
         this.summitSignUpButton = Selector('#signup-form .button-green');
         this.logInLink = Selector('#signup-form .sign-in-account');
-        //netguru.zadanie@gmail.com
     }
 
     async isPage() {
