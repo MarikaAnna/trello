@@ -8,9 +8,9 @@ export default class TrelloHomePage {
         this.signUpButton = Selector('.navbar .float-right.buttons .btn-sm.bg-white.font-weight-bold');
     }
 
-    // async isPage() {
-    //     await t.expect(Selector(this.currentPage).visible).ok();
-    // }
+    async isPage() {
+        await t.expect(Selector(this.currentPage).visible).ok();
+    }
 
     async goToLogInPage() {
         await t

@@ -12,9 +12,9 @@ export default class TrelloSignUpPage {
         //netguru.zadanie@gmail.com
     }
 
-    // async isPage() {
-    //     await t.expect(Selector(this.currentPage).visible).ok();
-    // }
+    async isPage() {
+        await t.expect(Selector(this.currentPage).visible).ok();
+    }
 
     async fillInTheUserNameInput(userName) {
         await t

@@ -30,6 +30,42 @@ test(`goes to the sign up page, then to log in and goes back to sign up page`, a
     //await trelloLogInPage.isPage();
     await trelloLogInPage.goToTheSignUpPage();
 });
+//
+// test(`tries to sign up with invalid name`, async(t) => {
+//     await trelloHomePage.goToSignUpPage();
+//
+//     await trelloSignUpPage.fillInTheUserNameInput('     ');
+//
+//     await trelloSignUpPage.fillInTheMailInput('netguru.zadanie+1@gmail.com');
+//
+//     await trelloSignUpPage.fillInThePasswordInput('Marika1!');
+//
+//     await trelloSignUpPage.summitBySigningUp();
+// });
+//
+// test(`signs up`, async(t) => {
+//     await trelloHomePage.goToSignUpPage();
+//
+//     await trelloSignUpPage.fillInTheUserNameInput('marixon1');
+//
+//     await trelloSignUpPage.fillInTheMailInput('netguru.zadanie+1@gmail.com');
+//
+//     await trelloSignUpPage.fillInThePasswordInput('Marika1!');
+//
+//     await trelloSignUpPage.summitBySigningUp();
+// });
+//
+// test(`signs up`, async(t) => {
+//     await trelloHomePage.goToSignUpPage();
+//
+//     await trelloSignUpPage.fillInTheUserNameInput('marixon1');
+//
+//     await trelloSignUpPage.fillInTheMailInput('netguru.zadanie+1@gmail.com');
+//
+//     await trelloSignUpPage.fillInThePasswordInput('Marika1!');
+//
+//     await trelloSignUpPage.summitBySigningUp();
+// });
 
 test(`signs up and fills matching proces`, async(t) => {
     await trelloHomePage.goToSignUpPage();

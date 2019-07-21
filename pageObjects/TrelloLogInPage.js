@@ -10,9 +10,9 @@ export default class TrelloLogInPage {
         this.signUpLink = Selector('.section-wrapper .create-account.quiet #signup');
     }
 
-    // async isPage() {
-    //     await t.expect(Selector(this.currentPage).visible).ok();
-    // }
+    async isPage() {
+        await t.expect(Selector(this.currentPage).visible).ok();
+    }
 
     async fillInTheUserNameInput(userName) {
         await t
