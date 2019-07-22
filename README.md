@@ -1,6 +1,6 @@
-# trello
-Install or make sure you have [node.js](https://nodejs.org/en/)
-Install or make sure you have [git](https://git-scm.com/downloads)
+# trello project
+Install or make sure you have [node.js](https://nodejs.org/en/) .
+Install or make sure you have [git](https://git-scm.com/downloads) .
 
 Clone a repository:
 * Go to the [GitHub Project](https://github.com/MarikaAnna/trello)
@@ -18,6 +18,7 @@ Then install necessary packages:
 Go to the project folder:
 * cd trello
 * git pull
+* [for macOS] probably you will need to also do: source ~/.bashrc
 
 And run the tests:
 [you can use any browser that you like. For MacOS I recommend chromium]
