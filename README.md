@@ -20,6 +20,9 @@ Go to the project folder:
 * git pull
 * [for macOS] probably you will need to also do: source ~/.bashrc
 
+Before running the tests:
+* make sure your trello.com opens up as a polish website
+
 And run the tests:
 [you can use any browser that you like. For MacOS I recommend chromium]
 * testcafe chromium suites/ 
